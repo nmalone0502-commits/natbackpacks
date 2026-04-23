@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | NatBackpacks</title>
+  <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+  </head>
+<body>
+  <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="NatBackpacks home">
+          <span class="brand-mark" aria-hidden="true"><img src="images/logo-mark.svg" alt=""></span>
+          <span class="brand-copy">
+            <span class="brand-title">NatBackpacks</span>
+            <span class="brand-tag">Travel notes, trail stories, and practical packing ideas</span>
+          </span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="services.html">Support Services</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <main>
+    <section class="page-header card tint">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Contact NatBackpacks</h1>
+      <p>Use the form below to ask about destinations, share an idea, or send feedback.</p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="contact-form-card card">
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <div>
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Natasha" required>
+              <p class="field-error" id="firstNameError"></p>
+            </div>
+
+            <div>
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Malone" required>
+              <p class="field-error" id="lastNameError"></p>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="name@example.com" required>
+              <p class="field-error" id="emailError"></p>
+            </div>
+
+            <div>
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Sydney" required>
+              <p class="field-error" id="cityError"></p>
+            </div>
+
+            <div>
+              <label for="state">State</label>
+              <input type="text" id="state" name="state" placeholder="NSW">
+            </div>
+
+            <div>
+              <label for="zip">Zip code</label>
+              <input type="text" id="zip" name="zip" placeholder="2000" required>
+              <p class="field-error" id="zipError"></p>
+            </div>
+          </div>
+
+          <label for="topic">What are you asking about?</label>
+          <select id="topic" name="topic">
+            <option value="">Choose one</option>
+            <option value="destination">A destination</option>
+            <option value="planning">A planning question</option>
+            <option value="services">A support service</option>
+            <option value="feedback">General feedback</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me what you are looking for."></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="button">Send message</button>
+            <button type="reset" class="button secondary">Clear</button>
+          </div>
+
+          <p class="success-message" id="successMessage"></p>
+        </form>
+      </article>
+
+      <aside class="card tint">
+        <h2>Helpful details to include</h2>
+        <ul class="city-list">
+          <li>Where you want to go</li>
+          <li>When you are travelling</li>
+          <li>Whether you want nature, city, or international ideas</li>
+          <li>Any budget or pace preferences</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>NatBackpacks</p>
+        <p>Built for the ITC2400 final project.</p>
+      </div>
+    </footer>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
